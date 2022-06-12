@@ -1,1 +1,24 @@
-css
+
+footer {
+    width:100%;
+    background-color: gray;
+}
+
+p.footer {
+    color: white;
+}
+
+.PortraitImg {
+    height: 350px;
+    width: 300px;
+}
+
+.GitHubLogo {
+    height: 50px;
+    width: 100px;
+}
+
+.RSSchoolLogo {
+    height: 50px;
+    width: 100px;
+}
