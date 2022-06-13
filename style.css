@@ -1,11 +1,46 @@
+* {
+    box-sizing: border-box;
+    color: black;
+  }
 
-footer {
-    width:100%;
-    background-color: gray;
+html {
+  scroll-behavior: smooth; 
+}  
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: blue;
+    padding: 30px;
 }
 
-p.footer {
-    color: white;
+main {
+    display: flex;
+}
+
+.left-corner {
+    max-width: 1000px;
+    margin: 10px 10px 10px 10px;
+}
+
+.right-corner {
+    margin: 10px 10px 10px 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 30px;
 }
 
 .PortraitImg {
@@ -13,12 +48,33 @@ p.footer {
     width: 300px;
 }
 
+footer {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0px 10px;
+}
+
+.year {
+    font-weight: bold;
+    font-size: 23px;
+
+}
+
+
+
 .GitHubLogo {
     height: 50px;
     width: 100px;
+    padding: 10px;
 }
 
 .RSSchoolLogo {
     height: 50px;
     width: 100px;
+    padding: 10px;
 }
