@@ -1,17 +1,21 @@
 * {
     box-sizing: border-box;
     color: black;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
   }
-
-html {
-  scroll-behavior: smooth; 
-}  
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
     background-color: blue;
     padding: 30px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: auto;
 }
 
 main {
@@ -19,12 +23,15 @@ main {
 }
 
 .left-corner {
-    max-width: 1000px;
-    margin: 10px 10px 10px 10px;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    background-color: aquamarine;
 }
 
 .right-corner {
-    margin: 10px 10px 10px 10px;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    background-color: antiquewhite;
 }
 
 body {
@@ -37,6 +44,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    background-color: blanchedalmond;
 }
 
 .name {
@@ -44,8 +52,10 @@ header {
 }
 
 .PortraitImg {
-    height: 350px;
-    width: 300px;
+    height: 300px;
+    width: 280px;
+    
+    padding: 10px;
 }
 
 footer {
@@ -77,4 +87,8 @@ footer {
     height: 50px;
     width: 100px;
     padding: 10px;
+}
+
+pre {
+    text-align: left;
 }
