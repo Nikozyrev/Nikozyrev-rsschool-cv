@@ -41,6 +41,11 @@ function rgb(r, g, b){
 - Coursera Advanced Excel (completed)
 
 **********
+### Education:
+- 2019 - Gomel State University F. Skorina, Gomel
+Master of Economics, World economy
+
+**********
 ### Languages:
 - **Russian** - Native
 - **English** - Intermediate
