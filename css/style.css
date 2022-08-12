@@ -4,40 +4,74 @@
 }
 
 body {
-    color: white;
+    color:  rgba(245, 248, 255, 0.8);
     font-family: "Roboto", sans-serif;
     background-color: black;
 }
 
+p {
+    margin-top: 5px;
+}
+
+a {
+    color: rgba(71, 98, 246, 0.7);
+}
+
 .wrapper {
     position: relative;
-    max-width: 1200px;
+    max-width: 950px;
     margin: 0 auto;
-    padding: 50px 15px 10px;
+    padding: 30px 15px 10px;
 }
 
 .header {
+    /* opacity: 0; */
     position: fixed;
     left: 0;
     top: 0;
     z-index: 2;
-    
+    /* transition: 0.5s; */
 }
 
-.navigation {
-    width: 100%;
-    min-height: 40px;
+/* .header:hover {
+    opacity: 1;
+    transition: 0.5s;
+} */
 
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 50px;
+    color: rgba(255, 255, 255, 0.9);
     background-color: black;
     
 }
 .nav_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
+    padding: 5px 15px;
 }
 
 .nav_item {
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav_item a {
+    color: white;
+}
+
+h2::before {
+    display: block; 
+    content: " ";
+    margin-top: -70px; 
+    height: 70px; 
+    visibility: hidden; 
+    pointer-events: none;
 }
 
 .main {
@@ -48,7 +82,19 @@ body {
     margin-top: 20px;
     background: radial-gradient(123.46% 164.03% at 91.33% -10.25%, #212225 0%, #1F2025 100%);
     border-radius: 24px;
-    padding: 15px;
+    padding: 15px 20px;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.list_item {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 22px;
 }
 
 .profile {
@@ -56,9 +102,9 @@ body {
 }
 
 .avatar {
-    width: 20%;
+    width: 210px;
     height: auto;
-    margin-right: 50px;
+    margin-right: 10%;
 }
 
 .portraitImg {
@@ -72,34 +118,105 @@ body {
 }
 
 .name {
+    color: rgba(255, 255, 255, 0.9);
     font-size: 40px;
 }
 
 .position {
     margin-top: 10px;
+    opacity: 0.5;
 }
 
 .contacts {
     margin: 10px 0px 0px 0px;
 }
 
+.education_courses_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education {
+    flex-basis: 40%;
+}
+
+.courses {
+    flex-basis: 58%;
+}
+
 pre {
     text-align: left;
+    background-color: rgba(206, 206, 206, 0.5);
+}
+
+.projects_container {
+    display: flex;
+    margin: 15px 0px 0px 0px;
+}
+
+.project_img_container {
+    flex: 0 0 40%;
+    margin-right: 5%;
+    transition: 0.5s;
+}
+
+.project_img_container:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.project_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 2px ;
+}
+
+.project_title {
+    font-style: italic;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.technologies {
+    margin-top: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.skills_languages_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    flex-basis: 49%;
+}
+
+.languages {
+    flex-basis: 49%;
 }
 
 .footer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.801);
     text-align: center;
     vertical-align: middle;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 .year {
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
+    color: black;
 }
 
 .GitHubLogo {
