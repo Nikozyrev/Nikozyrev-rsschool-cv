@@ -10,7 +10,7 @@ body {
 }
 
 p {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 a {
@@ -99,10 +99,12 @@ h2::before {
 
 .profile {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .avatar {
-    width: 210px;
+    flex: 0 0 210px;
+    /* width: 210px; */
     height: auto;
     margin-right: 10%;
 }
@@ -156,7 +158,7 @@ pre {
 }
 
 .project_img_container {
-    flex: 0 0 40%;
+    flex: 0 0 35%;
     margin-right: 5%;
     transition: 0.5s;
 }
