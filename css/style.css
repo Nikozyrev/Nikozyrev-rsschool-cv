@@ -14,7 +14,13 @@ p {
 }
 
 a {
-    color: rgba(71, 98, 246, 0.7);
+    /* color: rgba(71, 98, 246, 0.7); */
+}
+
+.list_item {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 22px;
 }
 
 .wrapper {
@@ -75,11 +81,21 @@ h2::before {
 }
 
 .main {
-    
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_left {
+
+}
+
+.main_right {
+    flex: 0 0 28%;
 }
 
 .section {
     margin-top: 20px;
+    margin-right: 20px;
     background: radial-gradient(123.46% 164.03% at 91.33% -10.25%, #212225 0%, #1F2025 100%);
     border-radius: 24px;
     padding: 15px 20px;
@@ -90,11 +106,6 @@ h2::before {
     font-size: larger;
     font-weight: 700;
     margin-bottom: 10px;
-}
-.list_item {
-    list-style-type: circle;
-    list-style-position: inside;
-    line-height: 22px;
 }
 
 .profile {
@@ -130,13 +141,35 @@ h2::before {
 }
 
 .contacts {
-    margin: 10px 0px 0px 0px;
+    /* margin: 10px 0px 0px 0px; */
+}
+
+.contacts_item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts_item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.contacts_item a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts_item img {
+    margin-right: 10px;
 }
 
 .education_courses_container {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .education {
@@ -148,6 +181,7 @@ h2::before {
 }
 
 pre {
+    padding: 0px 5px;
     text-align: left;
     background-color: rgba(206, 206, 206, 0.5);
 }
@@ -192,8 +226,8 @@ pre {
 }
 
 .skills_languages_container {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .skills {
