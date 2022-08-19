@@ -76,11 +76,12 @@ h2::before {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .main_left {
-
+    flex: 0 0 70%;
 }
 
 .main_right {
@@ -183,6 +184,7 @@ pre {
     padding: 0px 5px;
     text-align: left;
     background-color: rgba(206, 206, 206, 0.5);
+    border-radius: 10px;
 }
 
 .projects_container {
