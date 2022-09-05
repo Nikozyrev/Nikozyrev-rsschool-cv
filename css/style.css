@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color:  rgba(245, 248, 255, 0.8);
+    font-family: "Roboto", sans-serif;
+    background: rgb(27,85,158);
+    background: linear-gradient(180deg, rgba(27,85,158,1) 0%, rgba(0,0,42,0.9671218829328606) 41%, rgba(8,77,112,1) 100%);
+    
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    /* color: rgba(71, 98, 246, 0.7); */
+}
+
+.list_item {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 25px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 15px 10px;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 50px;
+    color: rgba(255, 255, 255, 0.9);    
+}
+.nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 15px;
+}
+
+.nav_item {
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav_item a {
+    color: white;
+}
+
+h2::before {
+    display: block; 
+    content: " ";
+    margin-top: -70px; 
+    height: 70px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_left {
+    flex: 0 0 70%;
+}
+
+.main_right {
+    flex: 0 0 30%;
+}
+
+.section {
+    margin-top: 20px;
+    margin-right: 20px;
+    background: radial-gradient(123.46% 164.03% at 91.33% -10.25%, rgba(33, 34, 37, 0.8) 0%, rgba(30, 31, 36, 0.8) 100%);
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    padding: 15px 20px;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    flex: 0 0 210px;
+    /* width: 210px; */
+    height: auto;
+    margin-right: 8%;
+}
+
+.portraitImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: solid 5px rgba(71, 98, 246, 1);
+}
+
+.name_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 50px;
+}
+
+.position {
+    margin-top: 10px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.contacts {
+    /* margin: 10px 0px 0px 0px; */
+}
+
+.contacts_item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts_item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.contacts_item a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts_item img {
+    margin-right: 10px;
+}
+
+.education_courses_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education {
+    flex-basis: 35%;
+}
+
+.courses {
+    flex-basis: 58%;
+}
+
+pre {
+    padding: 0px 5px;
+    text-align: left;
+    background-color: rgba(206, 206, 206, 0.5);
+    border-radius: 10px;
+}
+
+.projects_container {
+    display: flex;
+    margin: 15px 0px 0px 0px;
+}
+
+.project_img_container {
+    flex: 0 0 35%;
+    margin-right: 5%;
+    transition: 0.5s;
+}
+
+.project_img_container:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.project_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 2px ;
+}
+
+.project_title {
+    font-style: italic;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.technologies {
+    margin-top: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.skills_languages_container {
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.skills {
+    flex-basis: 49%;
+}
+
+.languages {
+    flex-basis: 49%;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.801);
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.year {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.GitHubLogo {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+}
+
+.RSSchoolLogo {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+}
